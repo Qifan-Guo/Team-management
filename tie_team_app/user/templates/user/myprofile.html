@@ -1,0 +1,74 @@
+{% extends "user/base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="content" class="colM">
+
+    <h1>Change stats</h1>
+    <div id="content-main">
+    <form action="" method="post" id="stats_form" novalidate="" class="form-group">
+            <div>
+                <fieldset class="module aligned ">
+                    <div class="form-row field-mesh_ip">
+                        <div>
+                            <label class="required" for="id_mesh_ip">Mesh ip:</label>
+                            <input type="number" name="mesh_ip" value="80" class="vIntegerField form-control" required=""
+                                id="id_mesh_ip">
+                        </div>
+                        <div>
+                            <label class="required" for="id_mesh_ip">Mesh ip interest:</label>
+                            <input type="number" name="mesh_ip" value="80" class="vIntegerField form-control" required=""
+                                id="id_mesh_ip_i">
+                        </div>
+                    </div>
+
+                    <div class="form-row field-mesh">
+                        <div>
+                            <label class="required" for="id_mesh">Mesh:</label>
+                            <input type="number" name="mesh" value="80" class="vIntegerField form-control" required="" id="id_mesh">
+                        </div>
+                    </div>
+                    <div class="form-row field-gas">
+                        <div>
+                            <label class="required" for="id_gas">Gas:</label>
+                            <input type="number" name="gas" value="0" class="vIntegerField form-control" required="" id="id_gas">
+                        </div>
+                    </div>
+                    <div class="form-row field-water">
+                        <div>
+                            <label class="required" for="id_water">Water:</label>
+                            <input type="number" name="water" value="40" class="vIntegerField form-control" required=""
+                                id="id_water">
+                        </div>
+                    </div>
+                    <div class="form-row field-DA">
+                        <div>
+                            <label class="required" for="id_DA">DA:</label>
+                            <input type="number" name="DA" value="0" class="vIntegerField form-control" required="" id="id_DA">
+                        </div>
+                    </div>
+                    <div class="form-row field-PLX">
+                        <div>
+                            <label class="required" for="id_PLX">PLX:</label>
+                            <input type="number" name="PLX" value="0" class="vIntegerField form-control" required="" id="id_PLX">
+                        </div>
+                    </div>
+                    <div class="form-row field-database">
+                        <div>
+                            <label class="required" for="id_database">Database:</label>
+                            <input type="number" name="database" value="80" class="vIntegerField form-control" required=""
+                                id="id_database">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="submit-row">
+                    <input type="submit" value="Save" class="default" name="_save">
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <br class="clear">
+</div>
+{% endblock content %}

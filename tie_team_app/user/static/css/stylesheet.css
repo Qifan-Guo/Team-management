@@ -1,0 +1,50 @@
+.logo-image{
+    width: 100px;
+    height: 46px;
+    overflow: hidden;
+    margin-top: -6px;
+}
+.navbar{
+    background-color: #ebeef2;
+    /* #7ab800 Landis Gyr Green  */
+}
+
+.nav-link{
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold italic;
+    font-size: large;
+}
+
+.card-img{
+    height: 200px;
+    width: 200px;
+}
+
+.card-graph{
+    margin-top:40px;
+    margin-left:8px;
+    height: 210px;
+}
+.card-name{
+    margin:0;
+}
+
+.card-text{
+    margin:0;
+}
+
+.job_position{
+    height:45px;
+    float: right;
+}
+
+.icon{
+    height:45px;
+}
+
+.icontext{
+    margin-top: 15px;
+    text-align: center;
+    font-size: large;
+}

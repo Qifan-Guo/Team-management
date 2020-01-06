@@ -1,0 +1,61 @@
+{% extends "user/base.html" %}
+{% load static %}
+
+
+{% block content %}
+<!-- <img src="{% static 'images/fab.jfif'%}">
+<img src="{% static 'graph/qifan_stat.svg'%}" class="img-fluid"> -->
+
+
+<a class="tie1_icon" rel="popover" data-img="{% static 'images/tie_1.svg'%}" style="display: none;"></a>
+<a class="tie2_icon" rel="popover" data-img="{% static 'images/tie_2.svg'%}" style="display: none;"></a>
+<a class="tieLead_icon" rel="popover" data-img="{% static 'images/tie_lead.svg'%}" style="display: none;"></a>
+<a class="tieSuper_icon" rel="popover" data-img="{% static 'images/tie_super.svg'%}" style="display: none;"></a>
+
+{% for x in info%}
+<p>something is here  {{x.profile_pic_addr}} </p>
+<img src="{% static 'images/'|add:x.profile_pic_addr%}" >
+{% endfor%}
+
+{% for y in stat%}
+<p>stats is here  mesh_ip: {{y.mesh_ip}} </p>
+{% endfor%}
+
+<div class="container">
+    <div class="row justify-content-md-center">
+
+        <div class="col-md-auto">
+            <div class="card flex-row">
+                <div class="card-header">
+                    <img src="{% static 'images/fab.jfif'%}" alt="" class="card-img">
+                    <h4 class="card-name">Fabrizzio Campos</h4>
+                    <img src="{%static 'images/tie_1.svg'%}" data-toggle="popover" class="job_position">
+                    <h6 class="card-text">TIE I</h6>
+                    <p class="card-text"><small> Joined: 01/06/2018</small></p>
+                </div>
+                <div class="card-block">
+                    <img src="{% static 'graph/qifan_stat.svg'%}" class="card-graph">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-auto">
+            <div class="card flex-row">
+                <div class="card-header">
+                    <img src="{% static 'images/fab.jfif'%}" alt="" class="card-img">
+                    <h4 class="card-name">Fabrizzio Campos</h4>
+                    <img src="{%static 'images/tie_1.svg'%}" data-toggle="popover" class="job_position">
+                    <h6 class="card-text">TIE I</h6>
+                    <p class="card-text"><small> Joined: 01/06/2018</small></p>
+                </div>
+                <div class="card-block">
+                    <img src="{% static 'graph/qifan_stat.svg'%}" class="card-graph">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock content %}
